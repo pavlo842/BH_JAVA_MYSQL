@@ -5,10 +5,15 @@ import rights_db.services.PersonsService;
 import java.sql.SQLException;
 
 public class Main {
-    public static void main(String[] args) throws SQLException {
-        PersonsService personsService = new PersonsService();
+//    public static void main(String[] args) throws SQLException {
+//        PersonsService personsService = new PersonsService();
 
 //        personsService.addNewPersons("Dobriy", "Igor", "Vitalievich");
-        personsService.addNewPersons("Pishchalau", "Pavel", "Sergeevich");
+//        personsService.addNewPersons("Pishchalau", "Pavel", "Sergeevich");
+//    }
+    public static void main(String[] args) throws SQLException {
+        MainMenu mainMenu = new MainMenu();
+
+        mainMenu.start();
     }
 }
