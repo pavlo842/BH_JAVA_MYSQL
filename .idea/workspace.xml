@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fd0cd29-7add-498a-927d-4f2c928ef25f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dataBaseInfo/instruction" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/services/PersonsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rights_db/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rights_db/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rights_db/services/PersonsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/services/PersonsService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +143,7 @@
       <workItem from="1579974624999" duration="5798000" />
       <workItem from="1580052560349" duration="33000" />
       <workItem from="1580060207754" duration="1469000" />
-      <workItem from="1580061690790" duration="901000" />
+      <workItem from="1580061690790" duration="1417000" />
     </task>
     <servers />
   </component>
