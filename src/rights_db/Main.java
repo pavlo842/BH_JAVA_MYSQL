@@ -11,7 +11,7 @@ public class Main {
 //        personsService.addNewPersons("Dobriy", "Igor", "Vitalievich");
 //        personsService.addNewPersons("Pishchalau", "Pavel", "Sergeevich");
 //    }
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) {
         MainMenu mainMenu = new MainMenu();
 
         mainMenu.start();

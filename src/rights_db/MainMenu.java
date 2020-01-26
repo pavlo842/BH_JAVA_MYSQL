@@ -12,7 +12,7 @@ public class MainMenu {
     private final InputService inputService;
     private final PersonsService personsService;
 
-    public MainMenu() throws SQLException {
+    public MainMenu() {
         this.inputService = new InputService();
         this.personsService = new PersonsService();
     }
@@ -34,7 +34,7 @@ public class MainMenu {
                         personsService.addNewPersons(surname, name, patronimic);
                         break;
                     case "2":
-//                        employeesService.printAllEmployeesData();
+                        personsService.printAllPersonsData();
                         break;
                     case "3":
                         break;
