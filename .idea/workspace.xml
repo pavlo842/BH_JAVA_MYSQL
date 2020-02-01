@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fd0cd29-7add-498a-927d-4f2c928ef25f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dataBaseInfo/instruction" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rights_db/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rights_db/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rights_db/organizations/Organizations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/organizations/Organizations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rights_db/persons/Persons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/persons/Persons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rights_db/services/InputService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/services/InputService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rights_db/services/OrganizationsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/services/OrganizationsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rights_db/services/PersonsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/services/PersonsService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +49,7 @@
         <item name="local_db" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="bh_java_mysql: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="persons: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="organizations: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -67,7 +73,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BH-J19" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -117,12 +123,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8da39b00" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@eba5c774" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8da39b00" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@8ab9634" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@eba5c774" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@189b2ea9" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -143,7 +149,11 @@
       <workItem from="1579974624999" duration="5798000" />
       <workItem from="1580052560349" duration="33000" />
       <workItem from="1580060207754" duration="1469000" />
-      <workItem from="1580061690790" duration="1417000" />
+      <workItem from="1580061690790" duration="2635000" />
+      <workItem from="1580407334531" duration="32000" />
+      <workItem from="1580408148119" duration="177000" />
+      <workItem from="1580408551830" duration="680000" />
+      <workItem from="1580556996715" duration="3829000" />
     </task>
     <servers />
   </component>

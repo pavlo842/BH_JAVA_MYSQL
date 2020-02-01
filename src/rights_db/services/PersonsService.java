@@ -4,10 +4,6 @@ import rights_db.dbManager.DbManager;
 import rights_db.persons.Persons;
 
 import java.sql.*;
-//import java.sql.Connection;
-//import java.sql.PreparedStatement;
-//import java.sql.SQLException;
-//import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,11 +15,8 @@ public class PersonsService {
     private static final String GET_ALL_PERSONS =
             "select * from persons;";
 
-//    private DbManager dbManager;
-
-//    public PersonsService() throws SQLException {
-//        this.dbManager = new DbManager();
-//    }
+//    private static final String DELETE_PERSONS =
+//            "DELETE FROM persons p WHERE p.persons_id = ?;";
 
     public void addNewPersons(String surname, String name, String patronimic) throws SQLException {
         Connection connection = DbManager.getConnection();
@@ -60,5 +53,10 @@ public class PersonsService {
     public void printAllPersonsData() throws SQLException {
         getAllPersonsData().forEach(System.out::println);
     }
+
+//    public void deletPersons(int persons_id) throws SQLException {
+//        Connection connection = DbManager.getConnection();
+//        PreparedStatement statement = connection.prepareStatement(DELETE_PERSONS);
+//    }
 
 }

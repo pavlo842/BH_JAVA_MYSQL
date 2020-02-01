@@ -7,9 +7,11 @@ import java.io.InputStreamReader;
 public class InputService {
 
     private static final String MENU =
-            "1. add persons\n"
-                    + "2. show all persons\n"
-                    + "exit\n";
+            "1. Добавить физическое лицо\n"
+                    + "2. Добавить организацию\n"
+                    + "3. Вывести на экран всех физических лиц\n"
+                    + "4. Вывести на экран все организации\n"
+                    + "'e' Выйти из программы!\n";
 
     private final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
