@@ -53,6 +53,20 @@ public class MainMenu {
                     case "4":
                         organizationsService.printAllOrganizationsData();
                         break;
+                    case "5":
+                        personsService.printAllPersonsData();
+                        System.out.println("Введите id-номер физического лица");
+                        int persons_id = inputService.getInputInt();
+                        personsService.deletePersons(persons_id);
+                        personsService.printAllPersonsData();
+                        break;
+                    case "6":
+                        organizationsService.printAllOrganizationsData();
+                        System.out.println("Введите id-номер организации");
+                        int org_id = inputService.getInputInt();
+                        organizationsService.deleteOrganizations(org_id);
+                        organizationsService.printAllOrganizationsData();
+                        break;
                     case "e":
                         break;
                     default:

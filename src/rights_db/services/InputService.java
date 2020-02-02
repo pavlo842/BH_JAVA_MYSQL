@@ -11,6 +11,8 @@ public class InputService {
                     + "2. Добавить организацию\n"
                     + "3. Вывести на экран всех физических лиц\n"
                     + "4. Вывести на экран все организации\n"
+                    + "5. Удалить физическое лицо\n"
+                    + "6. Удалить организацию\n"
                     + "'e' Выйти из программы!\n";
 
     private final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

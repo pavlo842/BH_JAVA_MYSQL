@@ -15,8 +15,8 @@ public class PersonsService {
     private static final String GET_ALL_PERSONS =
             "select * from persons;";
 
-//    private static final String DELETE_PERSONS =
-//            "DELETE FROM persons p WHERE p.persons_id = ?;";
+    private static final String DELETE_PERSONS =
+            "DELETE FROM persons p WHERE p.persons_id = ?;";
 
     public void addNewPersons(String surname, String name, String patronimic) throws SQLException {
         Connection connection = DbManager.getConnection();
@@ -54,9 +54,12 @@ public class PersonsService {
         getAllPersonsData().forEach(System.out::println);
     }
 
-//    public void deletPersons(int persons_id) throws SQLException {
-//        Connection connection = DbManager.getConnection();
-//        PreparedStatement statement = connection.prepareStatement(DELETE_PERSONS);
-//    }
+    public void deletePersons(int persons_id) throws SQLException {
+        Connection connection = DbManager.getConnection();
+        PreparedStatement statement = connection.prepareStatement(DELETE_PERSONS);
+        statement.setInt(1, persons_id);
+
+        statement.execute();
+    }
 
 }

@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8fd0cd29-7add-498a-927d-4f2c928ef25f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rights_db/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/organizations/Organizations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/organizations/Organizations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/persons/Persons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/persons/Persons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/services/OrganizationsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/services/OrganizationsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rights_db/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rights_db/organizations/Organizations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/organizations/Organizations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rights_db/persons/Persons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/persons/Persons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rights_db/rights/Rights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/rights/Rights.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rights_db/services/InputService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/services/InputService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rights_db/services/OrganizationsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/services/OrganizationsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rights_db/services/PersonsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/services/PersonsService.java" afterDir="false" />
@@ -51,6 +52,13 @@
         <item name="bh_java_mysql: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="organizations: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="local_db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bh_java_mysql: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="rights: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -77,6 +85,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
@@ -153,7 +162,8 @@
       <workItem from="1580407334531" duration="32000" />
       <workItem from="1580408148119" duration="177000" />
       <workItem from="1580408551830" duration="680000" />
-      <workItem from="1580556996715" duration="3829000" />
+      <workItem from="1580556996715" duration="4308000" />
+      <workItem from="1580627338144" duration="3139000" />
     </task>
     <servers />
   </component>

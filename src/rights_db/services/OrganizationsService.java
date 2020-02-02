@@ -15,6 +15,9 @@ public class OrganizationsService {
     private static final String GET_ALL_ORGANIZATIONS =
             "select * from organizations;";
 
+    private static final String DELETE_ORGANIZATIONS =
+            "DELETE FROM organizations o WHERE o.org_id = ?;";
+
     public void addNewOrganizations(String name_org, int utn, String start_date) throws SQLException {
         Connection connection = DbManager.getConnection();
         PreparedStatement statement = connection.prepareStatement(INSERT_NEW_ORGANIZATIONS_QUERY);
@@ -49,4 +52,13 @@ public class OrganizationsService {
     public void printAllOrganizationsData() throws SQLException {
         getAllOrganizationsData().forEach(System.out::println);
     }
+
+    public void deleteOrganizations(int org_id) throws SQLException {
+        Connection connection = DbManager.getConnection();
+        PreparedStatement statement = connection.prepareStatement(DELETE_ORGANIZATIONS);
+        statement.setInt(1, org_id);
+
+        statement.execute();
+    }
+
 }
