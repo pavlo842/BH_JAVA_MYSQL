@@ -15,6 +15,11 @@ public class Rights {
         this.end_date = end_date;
     }
 
+    public Rights(int right_id, String right_type) {
+        this.right_id = right_id;
+        this.right_type = right_type;
+    }
+
     public int getRight_id() {
         return right_id;
     }
@@ -49,11 +54,9 @@ public class Rights {
 
     @Override
     public String toString() {
-        return "Rights{" +
-                "right_id = " + right_id +
-                ", right_type = '" + right_type + '\'' +
-                ", start_date = " + start_date +
-                ", end_date = " + end_date +
-                '}';
+        return String.format("right_id = %d, right_type = \"%s\"," +
+                " start_date = \"%s\"," +
+                " end_date = \"%s\"",
+                right_id, right_type, start_date, end_date);
     }
 }

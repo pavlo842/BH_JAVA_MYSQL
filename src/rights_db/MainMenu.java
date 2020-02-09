@@ -37,7 +37,11 @@ public class MainMenu {
                         String name = inputService.getInputString();
                         System.out.println("Введите отчество");
                         String patronimic = inputService.getInputString();
-                        personsService.addNewPersons(surname, name, patronimic);
+                        System.out.println("Введите право из списка");
+                        rightsService.printAllRightsData();
+                        String right_type = inputService.getInputString();
+                        int right_id = rightsService.getIdByRights(right_type);
+                        personsService.addNewPersons(surname, name, patronimic, right_id);
                         personsService.printAllPersonsData();
                         break;
                     case "2":
@@ -72,9 +76,12 @@ public class MainMenu {
                         break;
                     case "7":
                         System.out.println("Введите наименование права");
-                        String right_type = inputService.getInputString();
+                        right_type = inputService.getInputString();
                         System.out.println("Введите дату начала права в формате ГГГГ-ММ-ДД");
                         start_date = inputService.getInputString();
+                        if (start_date.equals("")) {
+                            start_date = "2021-01-01";
+                        }
                         System.out.println("Введите дату окончания права в формате ГГГГ-ММ-ДД");
                         String end_date = inputService.getInputString();
                         if (end_date.equals("")) {
@@ -88,7 +95,7 @@ public class MainMenu {
                     case "8":
                         rightsService.printAllRightsData();
                         System.out.println("Введите id-номер записи права");
-                        int right_id = inputService.getInputInt();
+                        right_id = inputService.getInputInt();
                         rightsService.deleteRights(right_id);
                         rightsService.printAllRightsData();
                         break;

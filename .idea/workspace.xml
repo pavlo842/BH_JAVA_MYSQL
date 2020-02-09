@@ -4,16 +4,15 @@
     <list default="true" id="8fd0cd29-7add-498a-927d-4f2c928ef25f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6c5e3cf9-dceb-4b36-9957-7f759c505e2e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6c5e3cf9-dceb-4b36-9957-7f759c505e2e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBaseInfo/instruction" beforeDir="false" afterPath="$PROJECT_DIR$/dataBaseInfo/instruction" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/organizations/Organizations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/organizations/Organizations.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/persons/Persons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/persons/Persons.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/rights/Rights.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/rights/Rights.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/services/OrganizationsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/services/OrganizationsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/services/RightsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BH_JAVA_MYSQL/rights_db/services/RightsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rights_db/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rights_db/organizations/Organizations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/organizations/Organizations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rights_db/persons/Persons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/persons/Persons.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rights_db/rights/Rights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/rights/Rights.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rights_db/services/InputService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/services/InputService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rights_db/services/PersonsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/services/PersonsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rights_db/services/RightsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rights_db/services/RightsService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +53,7 @@
         <item name="local_db" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="bh_java_mysql: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="right_owners: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="persons: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -136,12 +135,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1c1512fa" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fb9ddf55" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1c1512fa" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@1d00dbcf" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fb9ddf55" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@65c797f8" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -171,6 +170,7 @@
       <workItem from="1580657996937" duration="17000" />
       <workItem from="1581177852290" duration="1791000" />
       <workItem from="1581254181824" duration="7115000" />
+      <workItem from="1581266596000" duration="7878000" />
     </task>
     <servers />
   </component>

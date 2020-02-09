@@ -1,5 +1,7 @@
 package rights_db.persons;
 
+import rights_db.rights.Rights;
+
 public class Persons {
     private int persons_id;
     private String surname;
@@ -7,12 +9,15 @@ public class Persons {
     private String name;
     private String patronimic;
 
-    public Persons(int persons_id, String surname, int age, String name, String patronimic) {
+    private Rights right_type;
+
+    public Persons(int persons_id, String surname, int age, String name, String patronimic, Rights right_type) {
         this.persons_id = persons_id;
         this.surname = surname;
         this.age = age;
         this.name = name;
         this.patronimic = patronimic;
+        this.right_type = right_type;
     }
 
     public int getPersonsId() {
@@ -55,14 +60,23 @@ public class Persons {
         this.patronimic = patronimic;
     }
 
+    public Rights getRight_type() {
+        return right_type;
+    }
+
+    public void setRight_type(Rights right_type) {
+        this.right_type = right_type;
+    }
+
     @Override
     public String toString() {
         return "Persons{" +
                 "persons_id = " + persons_id +
                 ", surname = '" + surname + '\'' +
                 ", age = " + age +
-                ", name = " + name +
-                ", patronimic = " + patronimic +
+                ", name = '" + name + '\'' +
+                ", patronimic = '" + patronimic + '\'' +
+                ", RIGHTS: " + right_type +
                 '}';
     }
 

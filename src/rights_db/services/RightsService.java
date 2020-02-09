@@ -6,16 +6,35 @@ import rights_db.rights.Rights;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class RightsService {
+    private static final String GET_ID_BY_RIGHTS_QUERY =
+            "select r.right_id from rights r where r.right_type = ?;";
+
     private static final String INSERT_NEW_RIGHTS_QUERY =
-            "insert into rights value (null, ?, ?, ?)";
+            "insert into rights value (null, ?, ?, ?);";
 
     private static final String GET_ALL_RIGHTS =
             "select * from rights;";
 
     private static final String DELETE_RIGHTS =
             "DELETE FROM rights r WHERE r.right_id = ?;";
+
+    public int getIdByRights(String right_type) throws SQLException {
+
+        PreparedStatement preparedStatement =
+                DbManager.getConnection().prepareStatement(GET_ID_BY_RIGHTS_QUERY);
+
+        preparedStatement.setString(1, right_type);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        if (!resultSet.next())
+            throw new NoSuchElementException("right_type with name " + right_type);
+
+        return resultSet.getInt("r.right_id");
+    }
 
     public void addNewRights(String right_type, String start_date, String end_date) throws SQLException {
         Connection connection = DbManager.getConnection();
