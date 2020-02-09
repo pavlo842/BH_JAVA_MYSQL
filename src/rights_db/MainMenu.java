@@ -3,6 +3,7 @@ package rights_db;
 import rights_db.services.InputService;
 import rights_db.services.OrganizationsService;
 import rights_db.services.PersonsService;
+import rights_db.services.RightsService;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -13,11 +14,13 @@ public class MainMenu {
     private final InputService inputService;
     private final PersonsService personsService;
     private final OrganizationsService organizationsService;
+    private final RightsService rightsService;
 
     public MainMenu() {
         this.inputService = new InputService();
         this.personsService = new PersonsService();
         this.organizationsService = new OrganizationsService();
+        this.rightsService = new RightsService();
     }
 
     public void start() {
@@ -66,6 +69,28 @@ public class MainMenu {
                         int org_id = inputService.getInputInt();
                         organizationsService.deleteOrganizations(org_id);
                         organizationsService.printAllOrganizationsData();
+                        break;
+                    case "7":
+                        System.out.println("Введите наименование права");
+                        String right_type = inputService.getInputString();
+                        System.out.println("Введите дату начала права в формате ГГГГ-ММ-ДД");
+                        start_date = inputService.getInputString();
+                        System.out.println("Введите дату окончания права в формате ГГГГ-ММ-ДД");
+                        String end_date = inputService.getInputString();
+                        if (end_date.equals("")) {
+                            end_date = "2021-01-01";
+                            rightsService.addNewRights(right_type, start_date, end_date);
+                        } else {
+                            rightsService.addNewRights(right_type, start_date, end_date);
+                        }
+                        rightsService.printAllRightsData();
+                        break;
+                    case "8":
+                        rightsService.printAllRightsData();
+                        System.out.println("Введите id-номер записи права");
+                        int right_id = inputService.getInputInt();
+                        rightsService.deleteRights(right_id);
+                        rightsService.printAllRightsData();
                         break;
                     case "e":
                         break;

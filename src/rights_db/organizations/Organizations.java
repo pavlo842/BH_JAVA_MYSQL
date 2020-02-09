@@ -50,10 +50,10 @@ public class Organizations {
     @Override
     public String toString() {
         return "Organizations{" +
-                "org_id=" + org_id +
-                ", name_org='" + name_org + '\'' +
-                ", utn=" + utn +
-                ", start_date=" + start_date +
+                "org_id = " + org_id +
+                ", name_org = '" + name_org + '\'' +
+                ", utn = " + utn +
+                ", start_date = " + start_date +
                 '}';
     }
 }

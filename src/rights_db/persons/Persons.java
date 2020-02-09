@@ -58,11 +58,11 @@ public class Persons {
     @Override
     public String toString() {
         return "Persons{" +
-                "persons_id=" + persons_id +
-                ", surname='" + surname + '\'' +
-                ", age=" + age +
-                ", name=" + name +
-                ", patronimic=" + patronimic +
+                "persons_id = " + persons_id +
+                ", surname = '" + surname + '\'' +
+                ", age = " + age +
+                ", name = " + name +
+                ", patronimic = " + patronimic +
                 '}';
     }
 

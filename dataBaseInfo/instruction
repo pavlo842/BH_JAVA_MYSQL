@@ -25,11 +25,11 @@ select * from organizations;
 
 -- таблица права
 create table rights (
-                        right_id int not null,
+                        right_id int primary key auto_increment not null,
                         right_type varchar(20) not null, -- вид права
                         start_date date default '2020-01-01' not null, -- дата возникновения права
                         end_date date default '2020-01-01', -- дата прекращения права
-                        foreign key (right_id) references right_owners (right_id)
+                        -- foreign key (right_id) references right_owners (right_id)
 );
 select * from rights;
 
